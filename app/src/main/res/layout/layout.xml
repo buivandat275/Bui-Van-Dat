@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/player_turn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Lượt của người chơi X"
+        android:textSize="24sp"
+        android:padding="16dp" />
+
+    <GridLayout
+        android:id="@+id/game_grid"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:columnCount="10"
+        android:rowCount="10"
+        android:alignmentMode="alignMargins"
+        android:layout_gravity="center"
+        android:useDefaultMargins="false"
+        android:padding="0dp"
+        />
+
+</LinearLayout>
